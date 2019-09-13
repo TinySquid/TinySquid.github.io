@@ -26,7 +26,7 @@ section {
 
 header {
   height: 70vh;
-  background-image: url('/images/bg-alt.jpg');
+  background-image: url('../images/bg-alt.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
