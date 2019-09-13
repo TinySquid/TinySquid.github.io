@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Abel|Mukta&display=swap');
+
+body {
+  font-family: 'Abel', sans-serif;
+  line-height: 2;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Mukta', sans-serif;
+  text-align: center;
+  padding: 2% 0;
+}
+
+section {
+  padding: 4% 0;
+}
+
+header {
+  height: 70vh;
+  background-image: url('/images/bg-alt.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+.titles {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titles div {
+  width: 35%;
+}
+
+header h1,
+header h2,
+header h3 {
+  text-align: left;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav a {
+  color: rgb(231, 231, 231);
+  text-decoration: none;
+  margin-top: 2%;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.links {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1%;
+}
+
+#about {
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#about div {
+  color: white;
+  background-color: #2e2e2e;
+  width: 60%;
+  box-shadow: 3px 3px 5px 6px #12121213;
+}
+
+#about p {
+  padding: 3%;
+}
+
+#skills {
+  text-align: center;
+  background: #2f2f2f;
+  color: white;
+}
+
+#skills p {
+  text-align: justify;
+  padding: 1%;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills-container div {
+  padding: 1% 1%;
+  width: 20%;
+  background: #363636;
+  box-shadow: 3px 3px 5px 6px #12121213;
+}
+
+i {
+  font-size: 3.5rem;
+}
+
+footer {
+  padding-top: 2%;
+  text-align: center;
+  font-style: italic;
+  background: #363636;
+  color: white;
+}
+
+footer p {
+  padding: 1%;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    height: 40vh;
+  }
+
+  .titles {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .titles div {
+    width: 100%;
+  }
+
+  .titles h1,
+  .titles h2,
+  .titles h3 {
+    margin-left: 5%;
+  }
+
+  #about div {
+    width: 80%;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-container div {
+    width: 80%;
+    margin: 2% 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .links {
+    display: flex;
+    width: 100%;
+  }
+
+  nav a {
+    color: rgb(231, 231, 231);
+    text-decoration: none;
+    margin-top: 2%;
+  }
+
+  #about div {
+    width: 90%;
+  }
+
+  .skills-container div {
+    width: 90%;
+
+  }
+}
