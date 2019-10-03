@@ -2563,5 +2563,28 @@ body>article {
 	#copyright li:first-child {
 		margin-top: 0;
 	}
+}
+
+.cards {
+	display: flex;
+	justify-content: flex-start;
+	flex-flow: row wrap;
+	width: 100%;
+}
+
+.card {
+	display: flex;
+	flex-flow: column wrap;
+
+	width: 48%;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 0 6px 2px #ccc;
+	margin: 1%;
+}
+
+.card img {
+	padding: 2% 0;
+	width: 90%;
 
 }

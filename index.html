@@ -97,27 +97,32 @@
       <header>
         <h2>Project's Showcase</h2>
       </header>
-      <div class="row">
-        <div class="col-4 col-6-medium col-12-small">
-          <article class="box style2">
-            <a href="https://github.com/TinySquid/responsive-web-design-I" class="image featured"><img src="img/responsive-project-1.jpg" alt="" /></a>
-            <a href="https://github.com/TinySquid/responsive-web-design-I"><span class="project-icon fab fa-github-square"></span></a>
-            <p>Fully responsive website with tablet & mobile breakpoints.</p>
-          </article>
+      <div class="cards">
+        <div class="card">
+          <a href="https://github.com/TinySquid/lambda-school-dark-mode"><img src="img/lambda-1.jpg" alt="" /></a>
+          <a href="https://github.com/TinySquid/lambda-school-dark-mode"><span class="project-icon fab fa-github-square"></span></a>
+          <p>Browser extension for Firefox & Chrome. Adds a dark theme to the Lambda School Training Kit.</p>
         </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <article class="box style2">
-            <a href="https://github.com/TinySquid/Sprint-Challenge--User-Interface" class="image featured"><img src="img/design-project-2.jpg" alt="" /></a>
-            <a href="https://github.com/TinySquid/Sprint-Challenge--User-Interface"><span class="project-icon fab fa-github-square"></span></a>
-            <p>Built from a design file.</p>
-          </article>
+        <div class="card">
+          <a href="https://github.com/TinySquid/github-usercard" class=""><img src="img/122432.jpg" alt="" /></a>
+          <a href="https://github.com/TinySquid/github-usercard"><span class="project-icon fab fa-github-square"></span></a>
+          <p>Uses axios to grab github API data. Creates user cards.</p>
         </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <article class="box style2">
-            <a href="https://codepen.io/TinySquid/pen/LKovWN" class="image featured"><img src="img/design-project-3.jpg" alt="" /></a>
-            <p>Responsive company pricing webpage.</p>
-          </article>
+        <div class="card">
+          <a href="https://github.com/TinySquid/responsive-web-design-I" class=""><img src="img/responsive-project-1.jpg" alt="" /></a>
+          <a href="https://github.com/TinySquid/responsive-web-design-I"><span class="project-icon fab fa-github-square"></span></a>
+          <p>Fully responsive website with tablet & mobile breakpoints.</p>
         </div>
+        <div class="card">
+          <a href="https://codepen.io/TinySquid/pen/LKovWN" class=""><img src="img/design-project-3.jpg" alt="" /></a>
+          <p>Responsive company pricing webpage.</p>
+        </div>
+        <div class="card">
+          <a href="https://github.com/TinySquid/Sprint-Challenge--User-Interface" class=""><img src="img/design-project-2.jpg" alt="" /></a>
+          <a href="https://github.com/TinySquid/Sprint-Challenge--User-Interface"><span class="project-icon fab fa-github-square"></span></a>
+          <p>Single page site built from a design file.</p>
+        </div>
+
       </div>
       <footer>
         <a href="#contact" class="button large scrolly">Contact me</a>
@@ -130,11 +135,10 @@
     <div class="container medium">
       <header>
         <h2>Get in touch with me</h2>
-        <p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p>
       </header>
       <div class="row">
         <div class="col-12">
-          <form method="post" action="#">
+          <form method="" action="#contact">
             <div class="row">
               <div class="col-6 col-12-small">
                 <input type="text" name="name" id="name" placeholder="Name" />
@@ -150,7 +154,7 @@
               </div>
               <div class="col-12">
                 <ul class="actions">
-                  <li><input type="submit" value="Send Message" /></li>
+                  <li><input type="submit" value="Send Message" onclick="alert('Form does not work')" /></li>
                   <li><input type="reset" value="Clear Form" class="alt" /></li>
                 </ul>
               </div>
