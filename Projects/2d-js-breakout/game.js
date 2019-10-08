@@ -3,7 +3,7 @@ let ctx = canvas.getContext("2d");
 
 let gameIsActive = false;
 
-let ballSpeed = 3.2;
+let ballSpeed = 2.6;
 let ballRadius = 10;
 
 let x = canvas.width / 2;
