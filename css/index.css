@@ -1,0 +1,124 @@
+@import "./normalize.css";
+
+/* Variables */
+:root {
+	/* Main */
+	--page-bg: #262626;
+	--page-color: #e6e6e6;
+
+	/* Card */
+	--card-bg: #434343;
+	--btc-color: #ffaa34;
+
+	/* Footer */
+	--footer-color: #b5c4c4;
+	--footer-link-color: #f5f5f5;
+	--footer-link-hover-color: #ffaa34;
+}
+
+/* GLOBAL STYLING */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%; /* 10px */
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto Slab", serif;
+	font-size: 1.6rem;
+	letter-spacing: 0.15rem;
+	line-height: 1.5;
+
+	color: var(--page-color);
+	background-color: var(--page-bg);
+
+	height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Lato", serif;
+}
+
+/* CONTAINER */
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	min-height: 100vh;
+}
+
+/* CARD STYLING */
+
+.card {
+	text-align: center;
+
+	width: 200px;
+	height: 300px;
+
+	margin: 64px;
+
+	background-color: var(--card-bg);
+	box-shadow: 0 2px 8px 3px rgb(20, 20, 20, 0.2);
+}
+
+.card i {
+	font-size: 12.8rem;
+	color: var(--btc-color);
+
+	margin-top: 24px;
+}
+
+.price-data {
+	display: flex;
+	flex-direction: column;
+}
+
+.currency {
+	margin: 10px auto 12px auto;
+}
+
+.price {
+	margin-bottom: 10px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid var(--btc-color);
+}
+
+.last-update {
+	font-size: 1.4rem;
+}
+
+/* FOOTER STYLING */
+footer {
+	color: var(--footer-color);
+}
+
+footer p {
+	font-size: 1.6rem;
+}
+
+@media (max-width: 450px) {
+	footer p {
+		font-size: 1.3rem;
+	}
+}
+
+footer a {
+	text-decoration: none;
+	transition: 0.3s;
+
+	color: var(--footer-link-color);
+}
+
+footer a:hover {
+	color: var(--footer-link-hover-color);
+}
